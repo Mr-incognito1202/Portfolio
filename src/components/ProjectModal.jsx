@@ -1,7 +1,8 @@
 import { useEffect } from "react";
-import { X, ExternalLink, Github, FileText, CheckCircle2, ListChecks, Target, ShieldCheck } from "lucide-react";
+import { X, ExternalLink, FileText, CheckCircle2, ListChecks, Target, ShieldCheck } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import ProofUploader from "./ProofUploader";
+import { GithubIcon } from "./SocialIcons";
 
 export default function ProjectModal({ project, onClose }) {
   useEffect(() => {
@@ -106,11 +107,11 @@ export default function ProjectModal({ project, onClose }) {
               <div className="modal-actions">
                 {project.github ? (
                   <a className="btn btn-secondary" href={project.github} target="_blank" rel="noreferrer">
-                    <Github size={15} /> Source Code <ExternalLink size={13} />
+                    <GithubIcon size={15} /> Source Code <ExternalLink size={13} />
                   </a>
                 ) : (
                   <span className="btn btn-disabled">
-                    <Github size={15} /> Repository Private / In Lab
+                    <GithubIcon size={15} /> Repository Private / In Lab
                   </span>
                 )}
                 {project.report ? (

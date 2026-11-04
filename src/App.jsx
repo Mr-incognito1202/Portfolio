@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from "react";
 import { motion } from "framer-motion";
-import { ArrowDown, ArrowUpRight, ChevronRight, Code2, Shield, Activity, FolderGit2, Search, ExternalLink, Download, Mail, Github, Linkedin, LockKeyhole, ChartNoAxesCombined, Target, Sparkles, TerminalSquare, Upload, Eye } from "lucide-react";
+import { ArrowDown, ArrowUpRight, ChevronRight, Code2, Shield, Activity, FolderGit2, Search, ExternalLink, Download, Mail, LockKeyhole, ChartNoAxesCombined, Target, Sparkles, TerminalSquare, Upload, Eye } from "lucide-react";
+import { GithubIcon, LinkedinIcon } from "./components/SocialIcons";
 import Navbar from "./components/Navbar";
 import ProjectModal from "./components/ProjectModal";
 import Terminal from "./components/Terminal";
@@ -498,10 +499,10 @@ function App() {
               </a>
               <div className="contact-social">
                 <a href="https://github.com/Mr-incognito1202" target="_blank" rel="noreferrer">
-                  <Github size={17} /> GitHub <ArrowUpRight size={14} />
+                  <GithubIcon size={17} /> GitHub <ArrowUpRight size={14} />
                 </a>
                 <a href="https://www.linkedin.com/in/harshavardhan-reddy-thotla-19867a314/" target="_blank" rel="noreferrer">
-                  <Linkedin size={17} /> LinkedIn <ArrowUpRight size={14} />
+                  <LinkedinIcon size={17} /> LinkedIn <ArrowUpRight size={14} />
                 </a>
               </div>
             </div>

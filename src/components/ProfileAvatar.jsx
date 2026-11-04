@@ -4,9 +4,9 @@ import { Camera, User, Check, Shield } from "lucide-react";
 export default function ProfileAvatar({ variant = "hero", className = "" }) {
   const [avatarUrl, setAvatarUrl] = useState(() => {
     try {
-      return localStorage.getItem("redsec_profile_avatar") || "/profile.jpg";
+      return localStorage.getItem("redsec_profile_avatar") || `${import.meta.env.BASE_URL}profile.jpg`;
     } catch {
-      return "/profile.jpg";
+      return `${import.meta.env.BASE_URL}profile.jpg`;
     }
   });
 

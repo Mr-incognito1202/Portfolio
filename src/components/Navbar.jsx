@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
-import { ShieldCheck, House, UserRound, Code2, FolderGit2, FlaskConical, ChartNoAxesCombined, Award, Mail, Github, Linkedin, Menu, X, ArrowUpRight } from "lucide-react";
+import { ShieldCheck, House, UserRound, Code2, FolderGit2, FlaskConical, ChartNoAxesCombined, Award, Mail, Menu, X, ArrowUpRight } from "lucide-react";
+import { GithubIcon } from "./SocialIcons";
 
 const links = [
   ["home", "Home", House],
@@ -68,7 +69,7 @@ export default function Navbar({ active, onNavigate }) {
             className="nav-icon-link"
             aria-label="GitHub Profile"
           >
-            <Github size={17} />
+            <GithubIcon size={17} />
           </a>
           <button
             className="mobile-toggle"
@@ -110,7 +111,7 @@ export default function Navbar({ active, onNavigate }) {
                 rel="noreferrer"
                 className="btn btn-secondary mobile-social-btn"
               >
-                <Github size={15} /> GitHub <ArrowUpRight size={13} />
+                <GithubIcon size={15} /> GitHub <ArrowUpRight size={13} />
               </a>
               <a
                 href="mailto:harshavardhan1202005@gmail.com"

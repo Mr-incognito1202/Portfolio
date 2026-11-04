@@ -15,7 +15,7 @@ const DEFAULT_DOCUMENTS = [
     size: "80 KB",
     verified: true,
     description: "Official certificate awarded by Infosys Springboard for successfully completing the Networking and Web Technology course on December 7, 2024.",
-    previewUrl: "/certificates/infosys-networking-web-tech.jpg",
+    previewUrl: `${import.meta.env.BASE_URL}certificates/infosys-networking-web-tech.jpg`,
     verifyUrl: "https://verify.onwingspan.com",
   },
   {
