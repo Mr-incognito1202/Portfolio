@@ -130,11 +130,11 @@ export default function ProfileAvatar({ variant = "hero", className = "" }) {
 
       <div className="identity-details">
         <div className="identity-header">
-          <span className="identity-clearance">ETHICAL RESEARCHER</span>
+          <span className="identity-clearance">SECURITY RESEARCHER</span>
           <span className="identity-id">ID: REDSEC-2024</span>
         </div>
         <h4>HarshaVardhan Reddy Thotla</h4>
-        <p>Cybersecurity Student · Web & API Security Specialist</p>
+        <p>Cybersecurity Student · Experience in Web & API Security </p>
         <div className="identity-badge-row">
           <span className="badge-item">
             <Shield size={12} /> AppSec
